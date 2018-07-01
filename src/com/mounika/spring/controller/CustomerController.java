@@ -37,6 +37,7 @@ public class CustomerController {
 	@GetMapping("/showFormForAdd")
 	public String addCustomer(Model theModel)
 	{
+		System.out.println("add new code");
 		Customer theCustomer = new Customer();
 		theModel.addAttribute("customeraaa", theCustomer);
 		return "customer-form";
